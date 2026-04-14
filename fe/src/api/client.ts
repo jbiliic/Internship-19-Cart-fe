@@ -15,7 +15,7 @@ export type ApiResult<T> =
     | { data: null; error: string };
 
 const axiosInstance: AxiosInstance = axios.create({
-    baseURL: import.meta.env.SERVER_URL,
+    baseURL: import.meta.env.VITE_SERVER_URL,
     headers: {
         'Content-Type': 'application/json',
     },
