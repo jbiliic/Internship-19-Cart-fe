@@ -8,13 +8,5 @@ export default defineConfig({
         react(),
         babel({ presets: [reactCompilerPreset()] })
     ],
-    server: {
-        proxy: {
-            '/api': {
-                target: import.meta.env.SERVER_URL,
-                changeOrigin: true,
-            },
-        },
-    }
 }
 )
